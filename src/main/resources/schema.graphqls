@@ -1,0 +1,44 @@
+## Query definition
+
+type Query {
+    people: [Person]
+    personById(id: Int): Person
+}
+
+## Person and project models definition
+
+type Person {
+    id: ID
+    name: String
+    email: String
+    projects: [Project]
+}
+
+type Project {
+    id: ID
+    name: String
+    description: String
+    status: String
+}
+
+## Mutation definition
+
+type Mutation {
+    newPerson(person: PersonInput!): Person
+}
+
+## Input type definitions for mutations
+
+input PersonInput {
+    name: String
+    email: String
+    #projects: [ProjectInput]
+}
+
+input ProjectInput {
+    name: String
+    description: String
+    status: String
+}
+
+
