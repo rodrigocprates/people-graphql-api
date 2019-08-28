@@ -7,17 +7,17 @@
 
 ## H2 database
 
-> URL: http://localhost:8080/h2-console
-> JDBC Url client: jdbc:h2:mem:test
-> User/pass: sa / <nopass>
+- URL: http://localhost:8080/h2-console
+- JDBC Url client: jdbc:h2:mem:test
+- User/pass: sa / <nopass>
 
 ## Graphiql *
 
-> http://localhost:8080/graphiql
+- http://localhost:8080/graphiql
 
 ## Playground
 
-> http://localhost:8080/playground
+- http://localhost:8080/playground
 
 ## Sample queries and mutations
 
@@ -32,7 +32,7 @@
 }
 >
 
-* get person by id
+- get person by id
 > query {
     personById(id: 1) {
       name
@@ -41,14 +41,14 @@
 
 ### Mutation
 
-* body
+- body
 > mutation NewPerson($input: PersonInput!) {
   newPerson(person: $input) {
     name
   }
 }
 
-* query variable (input)
+- query variable (input)
 > {
 "input": {
   "name": "Rodrigo Prates",
