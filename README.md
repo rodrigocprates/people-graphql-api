@@ -1,4 +1,6 @@
-## Scope description
+# Description
+
+A running sample GraphQL API using Spring Boot and GraphQL Java implementation.
 
 # To run
 
